@@ -34,7 +34,9 @@ function Header() {
                             <SearchIcon className="h-5 w-5 text-gray-500" />
                         </div>
                         {/* We have to add something called tailwind css forms to overwrite input predefined styles */}
-                        <input className='bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md' type="text" placeholder='Search' />
+                        <input className='bg-gray-50 block w-full pl-10 sm:text-sm
+                         border-gray-300 focus:ring-black focus:border-black
+                          rounded-md' type="text" placeholder='Search' />
                     </div>
                 </div>
                 {/* Right */}
