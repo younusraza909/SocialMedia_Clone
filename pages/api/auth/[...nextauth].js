@@ -19,5 +19,18 @@ export default NextAuth({
     // }
     pages: {
         signIn: "/auth/signin"
+    },
+    // To customizre callback result 
+    callbacks: {
+        async session({ session, token, user }) {
+            session.user.username = session.user.name
+                .split(' ')
+                .join("")
+                .toLowerCase()
+
+            //token.sub is google return id
+            session.user.uid = token.sub
+            return session
+        }
     }
 })

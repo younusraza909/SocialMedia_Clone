@@ -6,7 +6,7 @@ function signIn({ providers }) {
             <Header />
             <div
                 className='flex flex-col min-h-screen items-center
-                py-2  px-14 text-center justify-center'
+                py-2 -mt-20 px-14 text-center justify-center'
             >
                 <img className='w-80' src="https://links.papareact.com/ocw" alt="" />
                 <p className='font-xs italic'>
@@ -19,7 +19,7 @@ function signIn({ providers }) {
                         <div key={provider.name}>
                             <button
                                 className='p-3 rounded-lg text-white bg-blue-500'
-                                onClick={() => SignIntoProvider(provider.id)}>
+                                onClick={() => SignIntoProvider(provider.id, { callbackUrl: "/" })}>
                                 Sign in with {provider.name}
                             </button>
                         </div>
