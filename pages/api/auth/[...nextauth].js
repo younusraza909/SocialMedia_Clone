@@ -17,6 +17,7 @@ export default NextAuth({
     //     brandColor: "#F13287",
     //     colorScheme: "auto"
     // }
+    // For Custom Page
     pages: {
         signIn: "/auth/signin"
     },
