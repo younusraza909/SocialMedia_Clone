@@ -31,7 +31,7 @@ function signIn({ providers }) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const providers = await getProviders()
 
     return {
@@ -41,4 +41,4 @@ export async function getStaticProps() {
     }
 }
 
-export default signIn
+
